@@ -1,12 +1,8 @@
 #~ IMPORTS ~#
-import colorama
 import argparse
 from sorter import Sorter
 
 #~ GLOBALS ~#
-c1 = colorama.Fore.CYAN
-c2 = colorama.Fore.GREEN
-c3 = colorama.Fore.RED
 
 #~ ARGPARSING ~#
 def argp():
@@ -18,7 +14,6 @@ def argp():
 
 #~ MAIN PROGRAM ~#
 def main():
-    colorama.init()
     args = argp()
     s = Sorter(args.path)
 
