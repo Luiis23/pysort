@@ -16,7 +16,7 @@ class Sorter:
         for f in files:
             flist = f.split(".")
             try:
-                extension = flist[1]
+                extension = flist[len(flist) - 1]
                 if not os.path.exists(f"{self.path}/{extension}"):
                     os.makedirs(f"{self.path}/{extension}")
                 os.replace(f"{self.path}/{f}", f"{self.path}/{extension}/{f}") 
