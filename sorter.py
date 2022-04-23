@@ -17,6 +17,8 @@ class Sorter:
             flist = f.split(".")
             try:
                 extension = flist[len(flist) - 1]
+                if extension = "gz":
+                    extension = "tar.gz"
                 if not os.path.exists(f"{self.path}/{extension}"):
                     os.makedirs(f"{self.path}/{extension}")
                 os.replace(f"{self.path}/{f}", f"{self.path}/{extension}/{f}") 
