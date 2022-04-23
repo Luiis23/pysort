@@ -8,9 +8,6 @@ class Sorter:
         #if not self.path:                                            NOT WORKING AS INTENDED LOOK INTO IT LATER 
         #    self.path = os.path.dirname(os.path.abspath(__file__))
 
-    def getpath(self):
-        return self.path
-
     def sortfiles(self):
         files = os.listdir(self.path)
         for f in files:
