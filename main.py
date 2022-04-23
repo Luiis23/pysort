@@ -8,7 +8,7 @@ from sorter import Sorter
 def argp():
     parser = argparse.ArgumentParser(description="Sort files in subfolders")
 
-    parser.add_argument("--path", type=str, help="Path of the folder that will be sorted") 
+    parser.add_argument("path", type=str, help="Path of the folder that will be sorted") 
 
     return parser.parse_args()
 
