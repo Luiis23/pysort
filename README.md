@@ -4,7 +4,6 @@ Sorts files by their extension
 ### Compile :
 - Install Python3 + PIP
 - pip3 install pyinstaller
-- pyinstaller --onefile main.py -o pysort
-
+- pyinstaller -F main.py -n pysort
 ### Usage :
 - pysort --path (pathtofolder)
