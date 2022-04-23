@@ -6,4 +6,4 @@ Sorts files by their extension
 - pip3 install pyinstaller
 - pyinstaller -F main.py -n pysort
 ### Usage :
-- pysort --path (pathtofolder)
+- pysort (pathtofolder)
