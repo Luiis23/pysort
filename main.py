@@ -2,8 +2,6 @@
 import argparse
 from sorter import Sorter
 
-#~ GLOBALS ~#
-
 #~ ARGPARSING ~#
 def argp():
     parser = argparse.ArgumentParser(description="Sort files in subfolders")
